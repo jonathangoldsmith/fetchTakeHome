@@ -1,6 +1,6 @@
 ### Steps to Run the App
 
-This should run on any iPhone. This was designed specifically for a phone without a touch ID, in portrait mode. It looked fine in Landscape as well. I used all first party Apple code to reduce the need to load any external packages.
+This should run on any iPhone. This was designed specifically for a phone without a touch ID, in portrait mode. It looked fine in Landscape as well. I used all first party Apple code to reduce the need to load any external packages. Please check out the Test Suite, which should be a good place to start.
 
 ### Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
 
