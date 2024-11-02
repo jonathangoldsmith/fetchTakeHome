@@ -1,0 +1,32 @@
+### Steps to Run the App
+
+This should run on any iPhone. This was designed specifically for a phone without a touch ID, in portrait mode. It looked fine in Landscape as well. I used all first party Apple code to reduce the need to load any external packages.
+
+### Focus Areas: What specific areas of the project did you prioritize? Why did you choose to focus on these areas?
+
+I decided to prioritize getting a well unit tested RecipeViewModel that can take in different types of mock data and a dependency injected RecipeNetworkManager that could hit different endpoints. I wanted to show off what I think is necessary as far as proper protocol oriented programming to create a well tested app, that does not rely on the network.
+
+### Time Spent: Approximately how long did you spend working on this project? How did you allocate your time?
+
+I spent around 5 hours in total on the project.
+I would say I spent about 10 minutes looking at the requirements, planning out the order of operations for the project.
+I spent about an hour getting my initial test running, using Test Driven Development to write failing tests, then implement the required architecture to get the tests passing.
+Another hour was spent getting most of the UI working, including proper refreshing logic and error handling.
+I spent some time adding the search functionality, and learning about AsyncImage, which I thought based off of Apple documentation cached images to disk, but this article https://matteomanferdini.com/swiftui-asyncimage/#:~:text=The%20conclusion%20is%20that%20AsyncImage%20does%20not%20cache%20images. says otherwise. I updated my AsyncImge implementation accordingly to use the cached image when possible.
+One last hour was spent on code cleanup , tidying, removing unused code, commenting, debugging anything I may have missed, just generally double checking my work.
+
+### Trade-offs and Decisions: Did you make any significant trade-offs in your approach?
+
+As I researched the AsyncImage process a little late, I think there could be a cleaner way to handle the image caching. I initially wanted to do something using first party code, but in hindsight could've easily just added KingFisher and been happy, and saved some time. The UI is also fine, but maybe I could've done more as far as maybe some nice animations.
+
+### Weakest Part of the Project: What do you think is the weakest part of your project?
+
+The async image handling is a little weird, and the UI is servicable but not great. A nicer empty recipe list would be nice, maybe a refresh option or some retry logic would be great to ping the server in case of bad data.
+
+### External Code and Dependencies: Did you use any external code, libraries, or dependencies?
+
+None, but I would next time.
+
+### Additional Information: Is there anything else we should know? Feel free to share any insights or constraints you encountered.
+
+None! This was lovely to work on.
