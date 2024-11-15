@@ -9,6 +9,12 @@ import Foundation
 import Combine
 import SwiftUI
 
+enum StateManager {
+    case error
+    case loading
+    case hasRecipes
+}
+
 final class RecipeViewModel: ObservableObject, RecipeViewModelProtocol {
 
     private let networkingManager: RecipeNetworkingProtocol
